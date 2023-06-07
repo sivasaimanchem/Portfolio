@@ -1,7 +1,7 @@
 /* body */
 body {
     margin: 0px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 30px;
   }
   #body-header {
@@ -16,11 +16,11 @@ body {
   /* section */
   section {
     width: 100%;
-    height: 75vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
   }
   section:nth-child(2n) {
     background-color: #9e9b9b29;
@@ -28,6 +28,20 @@ body {
   
   section:nth-child(2n + 1) {
     background-color: white;
+  }
+
+  .section-heading{
+    width: auto;
+    padding: 20px 10px 20px;
+    font-weight: 400;
+  }
+  .section-heading span{
+    color: #2857a4;
+    font-size: 40px;
+    display: inline block;
+    padding-top: 10px;
+    margin-right: 0.5rem ; /*to be known*/
+  
   }
   /* navigation-body */
   .horizontal-list {
@@ -57,7 +71,7 @@ body {
   }
   /* name and social icons */
   #name-social-container {
-    margin-top: 20vh;
+    margin-top: 8%;
   }
   #my-name {
     font-size: 3rem;
@@ -93,4 +107,48 @@ body {
   width: 100%;
   border-radius: 50%;
   border: 3px solid white;
+}
+#about p{
+  width: 80%;
+  align-content: center;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+}
+/* skills */
+
+#skills-display{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.skill-icon{
+  width: 12rem;
+  height: 1.8rem;
+  border-radius: 0.8rem;
+  background-color: white;
+  overflow: hidden;
+  margin: 20px;
+}
+.mb-blue{
+  background-color: #2857a4;
+}
+.ninty-per{
+  width: 100%;
+  height: inherit;
+}
+.skill-name{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.skill-name span{
+  font-size: 1rem;
+  color: white;
+  vertical-align: middle;
+  margin-left: 15px;
+  font-family: 'Poppins', sans-serif;
+  
+}
+.skill-icon>div{
+  border-radius: 20px 0px 0px 20px;
 }
