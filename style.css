@@ -172,21 +172,6 @@ body {
   height: inherit;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Work Experience */
 
 .timeline {
@@ -288,7 +273,6 @@ body {
   line-height: 20px;
 }
 
-
 /* Portfolio Section */
 
 #portfolio-container {
@@ -333,12 +317,6 @@ body {
   background-color: #80808078;
   color: white;
 }
-
-
-
-
-
-
 
 /* contact */
 #contact {
@@ -426,4 +404,27 @@ body {
 }
 .sib li{
   margin-top: 30px;
+}
+
+/* media queries */
+@media screen and (max-width: 600px) {
+  #timeline-divider{
+      left:5% !important;
+  }
+  .timeline-box{
+    width: 80%;
+    left:12% !important;
+  }
+  .timeline-box::after{
+    left: -12% !important;
+  }
+  html{
+    font-size: 15px;
+  }
+  #contact-container{
+    display: flex;
+    .contact-division,.details{
+      width: 80% !important;
+    }
+  }
 }
